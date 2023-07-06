@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-07-06T01:36:15.358Z"
+    "x-generation-date": "2023-07-06T03:46:42.443Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -93,6 +93,9 @@
         ],
         "properties": {
           "data": {
+            "required": [
+              "slug"
+            ],
             "type": "object",
             "properties": {
               "Nama": {
@@ -126,6 +129,9 @@
                   }
                 ],
                 "example": "string or id"
+              },
+              "slug": {
+                "type": "string"
               }
             }
           }
@@ -179,6 +185,9 @@
       },
       "Dish": {
         "type": "object",
+        "required": [
+          "slug"
+        ],
         "properties": {
           "Nama": {
             "type": "string"
@@ -971,7 +980,7 @@
                           }
                         }
                       },
-                      "names": {
+                      "store": {
                         "type": "object",
                         "properties": {
                           "data": {
@@ -1151,6 +1160,9 @@
                                         }
                                       }
                                     },
+                                    "slug": {
+                                      "type": "string"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -1256,6 +1268,9 @@
               }
             }
           },
+          "slug": {
+            "type": "string"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -1355,7 +1370,7 @@
                 ],
                 "example": "string or id"
               },
-              "names": {
+              "store": {
                 "type": "array",
                 "items": {
                   "oneOf": [
@@ -2052,7 +2067,7 @@
               }
             }
           },
-          "names": {
+          "store": {
             "type": "object",
             "properties": {
               "data": {
@@ -2375,7 +2390,7 @@
                                         }
                                       }
                                     },
-                                    "names": {
+                                    "store": {
                                       "type": "object",
                                       "properties": {
                                         "data": {
@@ -2446,6 +2461,9 @@
                               }
                             }
                           }
+                        },
+                        "slug": {
+                          "type": "string"
                         },
                         "createdAt": {
                           "type": "string",

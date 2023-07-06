@@ -4,7 +4,8 @@
   "info": {
     "singularName": "store",
     "pluralName": "stores",
-    "displayName": "Store"
+    "displayName": "Store",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,16 +22,17 @@
       "type": "richtext"
     },
     "picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
-    "names": {
+    "store": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::dish.dish",

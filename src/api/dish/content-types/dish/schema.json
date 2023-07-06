@@ -4,7 +4,8 @@
   "info": {
     "singularName": "dish",
     "pluralName": "dishes",
-    "displayName": "Dish"
+    "displayName": "Dish",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,14 +19,15 @@
       "type": "text"
     },
     "Picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Price": {
       "type": "decimal"
@@ -34,7 +36,12 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::store.store",
-      "inversedBy": "names"
+      "inversedBy": "store"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "targetField": "Nama"
     }
   }
 }
