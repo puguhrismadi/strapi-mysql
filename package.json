@@ -11,14 +11,16 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "@strapi/plugin-documentation": "^4.11.4",
     "@strapi/plugin-i18n": "4.11.3",
     "@strapi/plugin-users-permissions": "4.11.3",
     "@strapi/strapi": "4.11.3",
     "mysql": "2.18.1",
-    "strapi-plugin-import-export-entries": "^1.21.0"
+    "strapi-plugin-import-export-entries": "^1.21.0",
+    "strapi-prometheus": "^1.6.0"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Puguh Rismadi Ismail"
   },
   "strapi": {
     "uuid": "1b2eaf88-77e8-40bd-b237-086ab246c3f0"
